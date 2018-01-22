@@ -1,14 +1,15 @@
-# Dash Ninja Database (dashninja-db)
-By Alexandre (aka elbereth) Devilliers
+# Monoeci Ninja Database (monoecininja-db)
 
-Check the running live website at https://dashninja.pl
+Initial code by Alexandre (aka elbereth) Devilliers (https://github.com/elbereth/dashninja-db)
 
-This is part of what makes the Dash Ninja monitoring application.
+Check the running live website at https://monoecininja.pl
+
+This is part of what makes the Monoeci Ninja monitoring application.
 It contains:
 - Database structure (MySQL)
 
 ## Requirement:
-* You will need a running MySQL with a Dash Ninja database and user.
+* You will need a running MySQL with a Monoeci Ninja database and user.
 
 ## Optional:
 * A user for the public API with only SELECT ability.
