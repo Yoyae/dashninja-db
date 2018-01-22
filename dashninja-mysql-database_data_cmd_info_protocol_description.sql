@@ -32,7 +32,7 @@
 
 LOCK TABLES `cmd_info_protocol_description` WRITE;
 /*!40000 ALTER TABLE `cmd_info_protocol_description` DISABLE KEYS */;
-INSERT INTO `cmd_info_protocol_description` VALUES (0,'Unknown'),(70306,'MonacoCoin (0.12.1.5)'),(70206,'Monoeci (0.12.2)');
+INSERT INTO `cmd_info_protocol_description` VALUES (0,'Unknown'),(70306,'MonacoCoin (0.12.1.5)'),(70206,'Monoeci (0.12.2.0)');
 /*!40000 ALTER TABLE `cmd_info_protocol_description` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
