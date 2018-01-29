@@ -27,13 +27,34 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Dumping data for table `cmd_portcheck_config`
+-- Dumping data for table `cmd_hub`
 --
 
-LOCK TABLES `cmd_portcheck_config` WRITE;
-/*!40000 ALTER TABLE `cmd_portcheck_config` DISABLE KEYS */;
-INSERT INTO `cmd_portcheck_config` VALUES (0,120100,'0.12.1.5',70306,0xBF0C6BBD),(0,120200,'0.12.2.0',70206,0xCEE2CAFF);
-/*!40000 ALTER TABLE `cmd_portcheck_config` ENABLE KEYS */;
+LOCK TABLES `cmd_hub` WRITE;
+/*!40000 ALTER TABLE `cmd_hub` DISABLE KEYS */;
+INSERT INTO `cmd_hub` VALUES (2,'::1',1, 0, 'test');
+
+LOCK TABLES `cmd_hub_nodes` WRITE;
+/*!40000 ALTER TABLE `cmd_hub_nodes` DISABLE KEYS */;
+INSERT INTO `cmd_hub_nodes` VALUES (2,1);
+
+LOCK TABLES `cmd_nodes` WRITE;
+/*!40000 ALTER TABLE `cmd_nodes` DISABLE KEYS */;
+INSERT INTO `cmd_nodes` VALUES (1,'monoeci', 0, 1, 'p2pool', 70206, 1, 1);
+
+LOCK TABLES `cmd_nodes_spork` WRITE;
+/*!40000 ALTER TABLE `cmd_nodes_spork` DISABLE KEYS */;
+INSERT INTO `cmd_nodes_spork` VALUES (1,'test', 1); /*Spork test*/
+
+LOCK TABLES `cmd_nodes_status` WRITE;
+/*!40000 ALTER TABLE `cmd_nodes_status` DISABLE KEYS */;
+INSERT INTO `cmd_nodes_status` VALUES (1,'running', 120200, 70206, 134800, '00000000000011335ba1d82e7e24c5aaeaf6c9398c669fd4cbc806d0d580e216', 10, 'France', 33, '1516889233');
+
+/*!40000 ALTER TABLE `cmd_hub` ENABLE KEYS */;
+/*!40000 ALTER TABLE `cmd_hub_nodes` ENABLE KEYS */;
+/*!40000 ALTER TABLE `cmd_nodes` ENABLE KEYS */;
+/*!40000 ALTER TABLE `cmd_nodes_spork` ENABLE KEYS */;
+/*!40000 ALTER TABLE `cmd_nodes_status` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
